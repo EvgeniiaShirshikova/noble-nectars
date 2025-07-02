@@ -1,3 +1,12 @@
+import { gsap } from "../node_modules/gsap";
+
+import { ScrollTrigger } from "./node_modules/gsap/ScrollTrigger";
+// ScrollSmoother requires ScrollTrigger
+import { ScrollSmoother } from "./node_modules/gsap/ScrollSmoother";
+
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
+
+
 window.addEventListener("DOMContentLoaded", () => {
   console.log("start");
 });
@@ -351,5 +360,3 @@ function anim() {
       ease: "bounce.out",
     });
 }
-
-
