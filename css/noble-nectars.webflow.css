@@ -563,7 +563,6 @@ a {
 .hero_content-wrapper {
   grid-column-gap: 1.88rem;
   justify-content: space-between;
-  min-height: 100vh;
   padding-top: 7.5rem;
   padding-left: 19.25rem;
   display: flex;
@@ -673,6 +672,7 @@ a {
 }
 
 .discover_title {
+  z-index: 3;
   position: absolute;
   top: 31.87rem;
 }
@@ -1121,6 +1121,18 @@ a {
     height: 22.5rem;
   }
 
+  .slider_wrapper {
+    grid-column-gap: 1.875rem;
+    grid-row-gap: 1.875rem;
+  }
+
+  .slide {
+    flex-basis: auto;
+    width: 33.75rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .spacer-7-5 {
     padding-top: 6.25rem;
   }
@@ -1145,6 +1157,18 @@ a {
 
   .title-width {
     width: 45.5rem;
+  }
+
+  .header_logo {
+    transform: scale(1.5);
+  }
+
+  .slider_title.u-text-gold.u-ml-7-5.title-width {
+    margin-left: 1.25rem;
+  }
+
+  .slide_text {
+    font-size: 2.25rem;
   }
 }
 
@@ -1351,7 +1375,13 @@ a {
     height: 11.25rem;
   }
 
+  .slider_wrapper {
+    grid-column-gap: 1.25rem;
+    grid-row-gap: 1.25rem;
+  }
+
   .slide {
+    width: 17.5rem;
     padding-left: .94rem;
     padding-right: .94rem;
   }
@@ -1403,7 +1433,7 @@ a {
   }
 
   .slide_text {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .hero_img-mob {

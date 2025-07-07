@@ -1,8 +1,8 @@
-import { gsap } from "gsap/index.js";
+import { gsap } from "../node_modules/gsap/index.js";
 
-import { ScrollTrigger } from "gsap/ScrollTrigger.js";
+import { ScrollTrigger } from "../node_modules/gsap/ScrollTrigger.js";
 // ScrollSmoother requires ScrollTrigger
-import { ScrollSmoother } from "gsap/ScrollSmoother.js";
+import { ScrollSmoother } from "../node_modules/gsap/ScrollSmoother.js";
 
 gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
 
